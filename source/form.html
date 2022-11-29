@@ -17,13 +17,13 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="index.html">Главная</a>
+              <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="catalog.html">Каталог продукции</a>
+              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="site-list__item item--current">
-              <a href="#">Подбор программы</a>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--current" href="#">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -57,20 +57,20 @@
             <ul class="program-group__list">
               <li class="program-group__item">
                 <label class="program-group__control">
-                  <input class="control__input" type="radio" name="type-program" value="Похудение" checked>
-                  <span class="control__label">Похудение</span>
+                  <input class="input" type="radio" name="type-program" value="Похудение" checked>
+                  <span class="radio-label">Похудение</span>
                 </label>
               </li>
               <li class="program-group__item">
-                <label class="progrm-group__control">
-                  <input class="control__input" type="radio" name="type-program" value="Набор массы">
-                  <span class="control__label">Набор массы</span>
+                <label class="program-group__control">
+                  <input class="input" type="radio" name="type-program" value="Набор массы">
+                  <span class="radio-label">Набор массы</span>
                 </label>
               </li>
               <li class="program-group__item">
-                <label class="progrm-group__control">
-                  <input class="control__input" type="radio" name="type-program" value="Не знаю (Нужен ваш совет)">
-                  <span class="control__label">Не знаю (Нужен ваш совет)</span>
+                <label class="program-group__control">
+                  <input class="input" type="radio" name="type-program" value="Не знаю (Нужен ваш совет)">
+                  <span class="radio-label">Не знаю (Нужен ваш совет)</span>
                 </label>
               </li>
             </ul>
@@ -95,33 +95,33 @@
           <fieldset class="form__additionally additionally">
             <legend class="additionally__title">Дополнительно</legend>
             <ul class="additionally__list">
-              <li class="additionaly__item">
-                <label class="additionaly__control">
-                  <input class="control__input" type="checkbox" name="additionally" value="Сахарозаменитель" checked>
-                  <span class="control__label">Сахарозаменитель</span>
+              <li class="additionally__item">
+                <label class="additionally__control">
+                  <input class="input" type="checkbox" name="additionally" value="Сахарозаменитель" checked>
+                  <span class="checkbox-label">Сахарозаменитель</span>
                 </label>
               </li>
-              <li class="additionaly__item">
-                <label class="additionaly__control">
-                  <input class="control__input" type="checkbox" name="additionally" value="Питьевая вода" checked>
-                  <span class="control__label">Питьевая вода</span>
+              <li class="additionally__item">
+                <label class="additionally__control">
+                  <input class="input" type="checkbox" name="additionally" value="Питьевая вода" checked>
+                  <span class="checkbox-label">Питьевая вода</span>
                 </label>
               </li>
-              <li class="additionaly__item">
-                <label class="additionaly__control">
-                  <input class="control__input" type="checkbox" name="additionally" value="Молоко" checked>
-                  <span class="control__label">Молоко</span>
+              <li class="additionally__item">
+                <label class="additionally__control">
+                  <input class="input" type="checkbox" name="additionally" value="Молоко" checked>
+                  <span class="checkbox-label">Молоко</span>
                 </label>
               </li>
-              <li class="additionaly__item">
-                <label class="additionaly__control">
-                  <input class="control__input" type="checkbox" name="additionally" value="Витамины" checked>
-                  <span class="control__label">Витамины</span>
+              <li class="additionally__item">
+                <label class="additionally__control">
+                  <input class="input" type="checkbox" name="additionally" value="Витамины" checked>
+                  <span class="checkbox-label">Витамины</span>
                 </label>
               </li>
             </ul>
           </fieldset>
-          <button class="form__submit-button button--primary" type="submit">Отправить заявку</button>
+          <button class="form__submit-button form__submit-button--primary" type="submit">Отправить заявку</button>
         </form>
         <span class="form__notification">* — Обязательные поля</span>
       </section>
@@ -141,7 +141,7 @@
           <img class="logo__image" src="img/logo/logo-cat-energy.svg" width="128" height="24" alt="Логотип Кэт Энерджи.">
         </a>
       </div>
-        <ul class="main-footer__social-list">
+        <ul class="main-footer__social-list social">
           <li class="social__item">
             <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">Наша страница Вконтакте.</a>
           </li>
