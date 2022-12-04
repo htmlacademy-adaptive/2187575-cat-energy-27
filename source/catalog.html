@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -13,11 +14,14 @@
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
+          <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path stroke="#000" stroke-width="1.5" d="M0 1.25h24m-24 8h24m-24 8h24"/>
+          </svg>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="index.html">Главная</a>
+              <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link site-list__link--current" href="#">Каталог продукции</a>
@@ -50,7 +54,7 @@
               <dt class="product__cell-unit">Цена</dt>
               <dd class="product__cell-meaning">700 ₽</dd>
             </dl>
-            <a class="product__button button button--primary" href="#">Заказать</a>
+            <a class="product__main-link button button--primary" href="#">Заказать</a>
           </li>
           <li class="catalog__item product">
             <a class="product__link" href="#">
@@ -69,7 +73,7 @@
               <dt class="product__cell-unit">Цена</dt>
               <dd class="product__cell-meaning">1000 ₽</dd>
             </dl>
-            <a class="product__button button button--primary" href="#">Заказать</a>
+            <a class="product__main-link button button--primary" href="#">Заказать</a>
           </li>
           <li class="catalog__item product">
             <a class="product__link" href="#">
@@ -88,7 +92,7 @@
               <dt class="product__cell-unit">Цена</dt>
               <dd class="product__cell-meaning">700 ₽</dd>
             </dl>
-            <a class="product__button button button--primary" href="#">Заказать</a>
+            <a class="product__main-link button button--primary" href="#">Заказать</a>
           </li>
           <li class="catalog__item product">
             <a class="product__link" href="#">
@@ -107,7 +111,7 @@
               <dt class="product__cell-unit">Цена</dt>
               <dd class="product__cell-meaning">1000 ₽</dd>
             </dl>
-            <a class="product__button button button--primary" href="#">Заказать</a>
+            <a class="product__main-link button button--primary" href="#">Заказать</a>
           </li>
           <li class="catalog__item product">
             <a class="product__link" href="#">
@@ -126,7 +130,7 @@
               <dt class="product__cell-unit">Цена</dt>
               <dd class="product__cell-meaning">400 ₽</dd>
             </dl>
-            <a class="product__button button button--primary" href="#">Заказать</a>
+            <a class="product__main-link button button--primary" href="#">Заказать</a>
           </li>
           <li class="catalog__item product">
             <a class="product__link" href="#">
@@ -145,7 +149,7 @@
               <dt class="product__cell-unit">Цена</dt>
               <dd class="product__cell-meaning">700 ₽</dd>
             </dl>
-            <a class="product__button button button--primary" href="#">Заказать</a>
+            <a class="product__main-link button button--primary" href="#">Заказать</a>
           </li>
           <li class="catalog__item product">
             <a class="product__link" href="#">
@@ -164,12 +168,12 @@
               <dt class="product__cell-unit">Цена</dt>
               <dd class="product__cell-meaning">500 ₽</dd>
             </dl>
-            <a class="product__button button button--primary" href="#">Заказать</a>
+            <a class="product__main-link button button--primary" href="#">Заказать</a>
           </li>
           <li class="catalog__item product product--show-all">
             <h2 class="product__title">Показать еще 100500 товаров</h2>
             <p class="product__description">На самом деле вкусов гораздо больше!</p>
-            <button class="product__button button button--secundary" type="button">Показать все</button>
+            <a class="product__main-link button button--secundary" href="#">Показать все</a>
           </li>
         </ul>
       </section>
@@ -182,7 +186,7 @@
               <dt class="extra-product__amount">1 упаковка (100 г)</dt>
               <dd class="extra-product__price">200 ₽</dd>
             </dl>
-            <a class="extra-product__button button button--primary" href="#">Заказать</a>
+            <a class="extra-product__main-link button button--primary" href="#">Заказать</a>
           </li>
           <li class="extra-catalog__item extra-product">
             <h3 class="extra-product__title">Питьевая вода</h3>
@@ -190,7 +194,7 @@
               <dt class="extra-product__amount">5 литров</dt>
               <dd class="extra-product__price">50 ₽</dd>
             </dl>
-            <a class="extra-product__button button button--primary" href="#">Заказать</a>
+            <a class="extra-product__main-link button button--primary" href="#">Заказать</a>
           </li>
           <li class="extra-catalog__item extra-product">
             <h3 class="extra-product__title">Молоко</h3>
@@ -198,7 +202,7 @@
               <dt class="extra-product__amount">1 литр</dt>
               <dd class="extra-product__price">100 ₽</dd>
             </dl>
-            <a class="extra-product__button button button--primary" href="#">Заказать</a>
+            <a class="extra-product__main-link button button--primary" href="#">Заказать</a>
           </li>
           <li class="extra-catalog__item extra-product">
             <h3 class="extra-product__title">Витамины</h3>
@@ -206,7 +210,7 @@
               <dt class="extra-product__amount">1 упаковка (30 г)</dt>
               <dd class="extra-product__price">300 ₽</dd>
             </dl>
-            <a class="extra-product__button button button--primary" href="#">Заказать</a>
+            <a class="extra-product__main-link button button--primary" href="#">Заказать</a>
           </li>
         </ul>
       </section>
