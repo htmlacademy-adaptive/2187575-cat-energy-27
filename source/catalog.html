@@ -12,7 +12,7 @@
         <a class="main-header__logo" href="index.html">
           <img src="img/logo/logo-mobile.svg" width="34" height="38" alt="Кэт энерджи.">
         </a>
-        <a class="main-header__logo-text">
+        <a class="main-header__logo-text" href="index.html">
           <img src="img/logo/logo-cat-energy.svg" width="101" height="18" alt="">
         </a>
         <nav class="main-nav">
@@ -23,10 +23,10 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a class="site-list__link site-list__link--current" href="#">Главная</a>
+              <a class="site-list__link site-list__link--current" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+              <a class="site-list__link" href="#">Каталог продукции</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link" href="form.html">Подбор программы</a>
@@ -142,14 +142,21 @@
               <img class="product__image" src="img/product-cards/buckwheat-big.png" width="84" height="100" alt="Cat Energy, большая упаковка со вкусом гречки.">
             </a>
             <dl class="product__detail-list">
-              <dt class="product__cell-unit">Масса</dt>
-              <dd class="product__cell-meaning">1000 г</dd>
 
-              <dt class="product__cell-unit">Вкус</dt>
-              <dd class="product__cell-meaning">Гречка</dd>
+              <div class="product__item">
+                <dt class="product__cell-unit">Масса</dt>
+                <dd class="product__cell-meaning">1000 г</dd>
+              </div>
 
-              <dt class="product__cell-unit">Цена</dt>
-              <dd class="product__cell-meaning">700 ₽</dd>
+              <div class="product__item">
+                <dt class="product__cell-unit">Вкус</dt>
+                <dd class="product__cell-meaning">Гречка</dd>
+              </div>
+
+              <div class="product__item">
+                <dt class="product__cell-unit">Цена</dt>
+                <dd class="product__cell-meaning">700 ₽</dd>
+              </div>
             </dl>
             <a class="product__main-link button button--primary" href="#">Заказать</a>
           </li>
