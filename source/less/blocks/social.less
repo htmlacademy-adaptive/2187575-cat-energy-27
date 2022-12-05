@@ -1,3 +1,40 @@
 .social {
   list-style-type: none;
+  display: flex;
+}
+
+.social__item {
+  &:not(:last-child) {
+    margin-right: 26px;
+  }
+}
+
+.social__vk {
+  &:hover path {
+    fill: @green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__youtube {
+  &:hover path {
+    fill: @green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__telegram {
+  &:hover path {
+    fill: @green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

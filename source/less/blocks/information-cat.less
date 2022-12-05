@@ -3,6 +3,25 @@
   padding: 0 20px 24px;
 }
 
-.information-cat__item:not(:last-child) {
-  margin-bottom: 14px;
+.information-cat__item {
+  display: flex;
+  flex-wrap: nowrap;
+
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
+}
+
+.form-item__input-label {
+  white-space: nowrap;
+  align-self: center;
+
+  &-webkit-outer-spin-button,
+  &-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+}
+
+.form-item__input {
+  flex-grow: 1;
 }

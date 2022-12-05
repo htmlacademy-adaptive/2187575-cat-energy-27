@@ -1,10 +1,18 @@
 .promo {
-  padding: 20px;
+  padding: 20px 0 20px 0;
 }
 
 .promo__wrapper {
-  padding: 27px 20px 20px;
+  position: relative;
   background-color: rgba(104, 183, 56, 0.85);
+  text-align: center;
+  padding: 27px 20px 20px;
+  min-height: 254px;
+  margin-bottom: 138px;
+}
+
+.promo__button-wrapper {
+  padding: 0 20px 0 20px;
 }
 
 .promo__headline {
@@ -28,12 +36,20 @@
 }
 
 .promo__link {
-  width: 192px;
   font-size: 14px;
   line-height: 26px;
 }
 
 .promo__product-image {
-  display: inline-block;
-  margin-bottom: 3px;
+  position: absolute;
+  left: 0;
+  right: 0;
+
+  min-width: 280px;
+  height: 270px;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }

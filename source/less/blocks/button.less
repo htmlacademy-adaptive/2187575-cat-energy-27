@@ -8,10 +8,28 @@
   &--primary {
     background-color: @green;
     color: @white;
+
+    &:hover {
+      background-color: @hover-green;
+      cursor: pointer;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 
   &--secundary {
     background-color: @basic-grey;
     color: @special-grey;
+
+    &:hover {
+      background-color: @hover-grey;
+      cursor: pointer;
+    }
+
+    &:active {
+      color: rgba(68, 68, 68, 0.3);
+    }
   }
 }
