@@ -1,0 +1,35 @@
+.button {
+  .font-regular;
+  display: block;
+  text-transform: uppercase;
+  padding: 7px 44px;
+  text-align: center;
+
+  &--primary {
+    background-color: @green;
+    color: @white;
+
+    &:hover {
+      background-color: @hover-green;
+      cursor: pointer;
+    }
+
+    &:active {
+      color: @active-white;
+    }
+  }
+
+  &--secundary {
+    background-color: @basic-grey;
+    color: @special-grey;
+
+    &:hover {
+      background-color: @hover-grey;
+      cursor: pointer;
+    }
+
+    &:active {
+      color: @active-grey;
+    }
+  }
+}
