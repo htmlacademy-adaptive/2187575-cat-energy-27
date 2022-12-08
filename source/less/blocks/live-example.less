@@ -12,12 +12,14 @@
 
 .live-example__description {
   .lato;
+  font-size: 14px;
+  line-height: 18px;
   color: @special-dark-grey;
   margin-bottom: 20px;
 }
 
 .live-example__list {
-  margin-bottom: 20px;
+  margin: 0 20px;
 }
 
 .live-example__objection {
@@ -33,7 +35,7 @@
 }
 
 .live-example__wrapper-conclusion {
-  margin-bottom: 20px;
+  margin: 0 20px;
 }
 
 .live-example__outcome {
@@ -46,3 +48,68 @@
 .live-example__slider {
   padding: 0 20px;
 }
+
+
+@media (min-width: @tablet-width) {
+  .live-example {
+    padding: 43px 30px 0;
+  }
+
+  .live-example__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0 0 63px;
+  }
+
+  .live-example__description {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 54px;
+  }
+
+  .live-example__objection {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .live-example__result {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .live-example__wrapper-conclusion {
+    margin: 0;
+  }
+
+  .live-example__outcome {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .live-example {
+    padding: 0 0 75px;
+  }
+
+  .live-example__title {
+    padding: 0 110px 76px;
+    margin: 0;
+    background-color: @white;
+  }
+
+  .live-example__description {
+    padding: 70px 110px 0;
+    margin: 0 0 69px;
+  }
+
+  .live-example__list {
+    padding: 0 110px;
+    margin: 0 0 47px;
+  }
+
+  .live-example__wrapper-conclusion {
+    padding: 0 110px;
+  }
+}
+

@@ -20,6 +20,7 @@
   font-size: 12px;
   line-height: 18px;
   margin-bottom: 13px;
+  color: @special-grey;
 }
 
 .product__main-link {
@@ -32,4 +33,28 @@
   min-width: 140px;
   display: flex;
   justify-content: space-between;
+}
+
+
+@media (min-width: @tablet-width) {
+  .product__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .product__detail-list {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .product__main-link {
+    padding: 8px 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product__title {
+    font-size: 20px;
+    line-height: 21px;
+  }
 }

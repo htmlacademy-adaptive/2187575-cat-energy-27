@@ -16,3 +16,28 @@
 .additionally__item:not(:last-child) {
   margin-bottom: 13px;
 }
+
+@media (min-width: @tablet-width) {
+  .additionally__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 57px;
+  }
+
+  .additionally__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 32px;
+  }
+
+  .additionally__item:not(:last-child) {
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additionally__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}

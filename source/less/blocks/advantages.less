@@ -12,9 +12,54 @@
   .list-null;
 }
 
+.advantages__item {
+  margin-bottom: 20px;
+}
+
 .advantages__description {
   .lato;
   font-size: 14px;
   line-height: 18px;
   color: @special-dark-grey;
+  margin: 0;
+}
+
+
+@media (min-width: @tablet-width) {
+  .advantages {
+    padding: 0 105px 47px 30px;
+  }
+
+  .advantages__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 32px;
+  }
+
+  .advantages__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .advantages__item {
+    width: 246px;
+    padding: 40px 0 57px;
+    margin-bottom: 37px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages {
+    padding: 0 106px 69px 110px;
+  }
+
+  .advantages__title {
+    margin-bottom: 72px;
+  }
 }

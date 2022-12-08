@@ -12,16 +12,26 @@
   }
 }
 
-.form-item__input-label {
-  white-space: nowrap;
-  align-self: center;
+.form-item__input {
+  flex-grow: 1;
+}
 
-  &-webkit-outer-spin-button,
-  &-webkit-inner-spin-button {
-    -webkit-appearance: none;
+@media (min-width: @tablet-width) {
+  .information-cat__list {
+    padding: 0;
+    margin-bottom: 72px;
+  }
+
+  .information-cat__item {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
   }
 }
 
-.form-item__input {
-  flex-grow: 1;
+@media (min-width: @desktop-width) {
+  .information-cat__list {
+    width: 569px;
+    margin: 0;
+  }
 }

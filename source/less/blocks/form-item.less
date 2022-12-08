@@ -1,7 +1,17 @@
 .form-item__input-label {
   font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
   color: @special-grey;
+  white-space: nowrap;
+  align-self: center;
+
   margin-right: 12px;
+
+  &-webkit-outer-spin-button,
+  &-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
 }
 
 .form-item__input {
@@ -14,5 +24,17 @@
 
   &::placeholder {
     color: @special-dark-grey;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form-item__input-label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form-item__input {
+    font-size: 20px;
+    line-height: 30px;
   }
 }

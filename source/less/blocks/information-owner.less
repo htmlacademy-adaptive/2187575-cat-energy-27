@@ -2,6 +2,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
+  text-transform: none;
 }
 
 .information-owner__list {
@@ -14,5 +15,34 @@
 
   &:not(:last-child) {
     margin-bottom: 14px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .information-owner__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+  }
+
+  .information-owner__item {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .information-owner__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .information-owner__item {
+    flex-grow: 1;
+
+    &:not(:last-child) {
+      margin: 0 78px 0 0;
+    }
   }
 }

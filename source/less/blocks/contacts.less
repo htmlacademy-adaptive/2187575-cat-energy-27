@@ -22,3 +22,40 @@
   line-height: 20px;
   color: @special-dark-grey;
 }
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    padding: 56px 70px;
+  }
+
+  .contacts__title {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .contacts__description {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    width: 405px;
+    height: 86px;
+
+    padding: 60px 80px 52px;
+
+    &--desktop-light {
+      background-color: @white;
+    }
+  }
+
+  .contacts__title {
+    margin: 0;
+  }
+
+  .contacts__description {
+    margin: 0;
+  }
+}

@@ -6,3 +6,34 @@
   padding: 20px 20px 25px;
   border-bottom: 1px @border-grey solid;
 }
+
+@media (min-width: @tablet-width) {
+  .catalog {
+    padding: 0 30px 68px;
+  }
+
+  // .catalog__list {
+  //   display: grid;
+  // }
+
+  .catalog__item {
+    text-align: center;
+
+    width: 252px;
+    padding: 161px 38px 38px;
+
+    background-color: @basic-grey;
+    outline: 1px black solid;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog {
+    padding: 0 110px 75px;
+  }
+
+  .catalog__item {
+    width: 245px;
+    padding: 30px 40px 35px;
+  }
+}
