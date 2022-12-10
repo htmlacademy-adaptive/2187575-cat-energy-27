@@ -3,7 +3,7 @@
 }
 
 .catalog__item {
-  padding: 20px 20px 25px;
+  padding: 19px 20px 25px;
   border-bottom: 1px @border-grey solid;
 }
 
@@ -12,18 +12,15 @@
     padding: 0 30px 68px;
   }
 
-  // .catalog__list {
-  //   display: grid;
-  // }
+  .catalog__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(324px, 1fr));
+    gap: 60px;
+  }
 
   .catalog__item {
-    text-align: center;
-
     width: 252px;
-    padding: 161px 38px 38px;
-
-    background-color: @basic-grey;
-    outline: 1px black solid;
+    padding: 0 36px 39px;
   }
 }
 
@@ -33,7 +30,12 @@
   }
 
   .catalog__item {
-    width: 245px;
-    padding: 30px 40px 35px;
+    width: 180px;
+    padding: 0 38px 40px 39px;
+  }
+
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
   }
 }

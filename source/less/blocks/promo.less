@@ -1,10 +1,13 @@
 .promo {
   padding: 0 0 20px 0;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .promo__wrapper {
   position: relative;
-  background-color: rgba(104, 183, 56, 0.85);
+  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/promo/index-background-promo.jpg") no-repeat center;
+  background-size: cover;
   text-align: center;
   padding: 27px 20px 20px;
   min-height: 254px;
@@ -54,7 +57,6 @@
   text-align: center;
 }
 
-
 @media (min-width: @tablet-width) {
   .promo {
     padding: 59px 117px 0 117px;
@@ -62,7 +64,7 @@
   }
 
   .promo__wrapper {
-    background-color: transparent;
+    background: transparent;
     text-align: left;
     margin: 0 0 49px;
     padding: 0;

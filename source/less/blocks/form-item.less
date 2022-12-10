@@ -7,11 +7,6 @@
   align-self: center;
 
   margin-right: 12px;
-
-  &-webkit-outer-spin-button,
-  &-webkit-inner-spin-button {
-    -webkit-appearance: none;
-  }
 }
 
 .form-item__input {
@@ -24,6 +19,11 @@
 
   &::placeholder {
     color: @special-dark-grey;
+  }
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
   }
 }
 
