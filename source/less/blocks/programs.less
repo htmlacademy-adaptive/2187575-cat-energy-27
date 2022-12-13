@@ -1,18 +1,82 @@
 .programs {
   .list-null;
-  padding: 0 20px 20px 20px;
+  padding: 0 20px 19px 20px;
+  max-width: 1220px;
+  margin: 0 auto;
 }
 
-.programs__item:not(:last-child) {
-  margin-bottom: 20px;
+.programs__item {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 13px;
+  }
+
+  &::before {
+    position: absolute;
+    top: 30px;
+    bottom: auto;
+    left: 22px;
+    right: auto;
+
+    display: block;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: @green;
+    content: " ";
+    z-index: 1;
+  }
+
+  &:nth-child(1) {
+    &::after {
+      position: absolute;
+      top: 0;
+      bottom: auto;
+      left: 0;
+      right: auto;
+
+      width: 93px;
+      height: 103px;
+      background-image: url("../img/programs/cat-slim.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+
+      content: " ";
+      z-index: 2;
+    }
+  }
+
+  &:nth-child(2) {
+    &::after {
+      position: absolute;
+      top: 0;
+      bottom: auto;
+      left: 0;
+      right: auto;
+
+      width: 92px;
+      height: 110px;
+      background-image: url("../img/programs/cat-pro.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+
+      content: " ";
+      z-index: 2;
+    }
+  }
 }
 
 .programs__item-wrapper {
+  position: relative;
+
   background-color: @basic-grey;
   padding: 21px 20px 18px 19px;
 }
 
 .programs__title {
+  margin: 15px 30px 30px 72px;
   font-weight: 400;
   font-size: 24px;
   line-height: 36px;
@@ -20,6 +84,7 @@
 }
 
 .programs__description {
+  position: relative;
   .lato;
   font-size: 14px;
   line-height: 18px;
@@ -57,11 +122,54 @@
 
 @media (min-width: @tablet-width) {
   .programs {
-    padding: 0 30px 30px 30px;
+    padding: 0 30px 45px;
+  }
+
+  .programs__item {
+    &::before {
+      top: auto;
+      bottom: 80px;
+      left: auto;
+      right: 62px;
+      width: 200px;
+      height: 200px;
+    }
+
+    &:nth-child(1) {
+      &::after {
+        top: auto;
+        bottom: 97px;
+        left: auto;
+        right: 92px;
+
+        width: 140px;
+        height: 194px;
+
+        background-size: cover;
+      }
+    }
+
+    &:nth-child(2) {
+      &::after {
+        top: auto;
+        bottom: 125px;
+        left: auto;
+        right: 28px;
+
+        width: 268px;
+        height: 112px;
+
+        background-size: cover;
+      }
+    }
+  }
+
+  .programs__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 
   .programs__item-wrapper {
-    padding: 77px 62px 53px 52px;
+    padding: 77px 62px 57px 52px;
   }
 
   .programs__title {
@@ -74,10 +182,20 @@
     font-size: 16px;
     line-height: 24px;
 
+    display: grid;
+
     padding: 0;
     margin: 0 0 52px;
 
     border: none;
+
+    &:nth-child(1) {
+      grid-template-columns: 55% 45%;
+    }
+
+    &:nth-child(2) {
+      grid-template-columns: 57% 43%;
+    }
   }
 
   .programs__link {
