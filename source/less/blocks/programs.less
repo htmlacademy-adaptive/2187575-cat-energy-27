@@ -224,17 +224,52 @@
     &:nth-child(odd) {
       margin-right: 80px;
     }
+
+    &::before {
+      top: 47px;
+      bottom: 0;
+      left: 52px;
+      right: 0;
+      width: 100px;
+      height: 100px;
+    }
+
+    &:nth-child(1) {
+      &::after {
+        top: 41px;
+        bottom: 0;
+        left: 67px;
+        right: 0;
+
+        width: 70px;
+        height: 97px;
+      }
+    }
+
+    &:nth-child(2) {
+      &::after {
+        top: 67px;
+        bottom: 0;
+        left: 33px;
+        right: 0;
+
+        width: 134px;
+        height: 56px;
+      }
+    }
+
   }
 
   .programs__item-wrapper {
-    padding: 41px 61px 55px 52px;
+    padding: 77px 61px 55px 52px;
   }
 
   .programs__title {
-    margin: 38px 0 73px 0;
+    margin: 0 0 73px 162px;
   }
 
   .programs__description {
+    display: block;
     margin-bottom: 27px;
   }
 }
