@@ -7,42 +7,43 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
   </head>
   <body class="page__body">
-    <header class="main-header">
-        <div class="main-header__wrapper">
-          <a class="main-header__logo-mobile">
-            <img src="img/logo/logo-mobile.svg" width="34" height="38" alt="Кэт энерджи.">
-          </a>
-          <a class="main-header__logo-tablet">
-            <img src="img/logo/logo-tablet.svg" width="174" height="52" alt="Кэт энерджи.">
-          </a>
-          <a class="main-header__logo-desktop">
-            <img src="img/logo/logo-desktop.svg" width="202" height="59" alt="Кэт энерджи.">
-          </a>
-          <a class="main-header__logo-text">
-            <img src="img/logo/logo-cat-energy.svg" width="101" height="18" alt="">
-          </a>
-          <button class="main-header__nav-toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-        </div>
-        <nav class="main-nav">
-          <div class="main-nav__wrapper">
-            <!--site-list--close пока что добавлен для удобства. Убрать на защите!-->
-            <ul class="main-nav__list site-list site-list--close">
-              <li class="site-list__item">
-                <a class="site-list__link site-list__link--current site-list__link--light" href="#">Главная</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link site-list__link--light" href="catalog.html">Каталог продукции</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link site-list__link--light" href="form.html">Подбор программы</a>
-              </li>
-            </ul>
+    <div class="page__header-container">
+      <header class="main-header">
+          <div class="main-header__wrapper">
+            <a class="main-header__logo-mobile">
+              <img src="img/logo/logo-mobile.svg" width="34" height="38" alt="Кэт энерджи.">
+            </a>
+            <a class="main-header__logo-tablet">
+              <img src="img/logo/logo-tablet.svg" width="174" height="52" alt="Кэт энерджи.">
+            </a>
+            <a class="main-header__logo-desktop">
+              <img src="img/logo/logo-desktop.svg" width="202" height="59" alt="Кэт энерджи.">
+            </a>
+            <a class="main-header__logo-text">
+              <img src="img/logo/logo-cat-energy.svg" width="101" height="18" alt="">
+            </a>
+            <button class="main-header__nav-toggle nav-toogle-open" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
           </div>
-        </nav>
-        <div class="main-header__desktop-bg"></div>
-    </header>
+          <nav class="main-nav">
+            <div class="main-nav__wrapper">
+              <!--site-list--close пока что добавлен для удобства. Убрать на защите!-->
+              <ul class="main-nav__list site-list site-list--close">
+                <li class="site-list__item">
+                  <a class="site-list__link site-list__link--current site-list__link--light" href="#">Главная</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link site-list__link--light" href="catalog.html">Каталог продукции</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link site-list__link--light" href="form.html">Подбор программы</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+      </header>
+    </div>
     <main class="main-container">
       <h1 class="visually-hidden">Интернет магазин Кэт энерджи.</h1>
       <section class="promo">
@@ -126,8 +127,9 @@
             <h2 class="contacts__title">приглашаем<br> к сотрудничеству<br> дилеров!</h2>
             <p class="contacts__description">ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург</p>
           </div>
-          <div class="location__map map">
-            <!-- Тут будет интерактивная карта от гугла с измененным маркером -->
+          <div class="location__map">
+            <iframe class="location__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037902355351!2d30.31882022704915!3d59.938716432394365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1671067485161!5m2!1sru!2sru"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
         <section class="main-footer__under-wrapper">

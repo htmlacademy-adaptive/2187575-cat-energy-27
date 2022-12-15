@@ -1,0 +1,34 @@
+.location__address {
+  padding: 26px 20px;
+}
+
+.location__map-iframe {
+  display: block;
+  width: 100%;
+  height: 362px;
+
+  border: none;
+}
+
+
+@media (min-width: @tablet-width) {
+  .location__map-iframe {
+    height: 400px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .location {
+    position: relative;
+  }
+
+  .location__address {
+    position: absolute;
+    top: 96px;
+    right: auto;
+    left: 110px;
+    bottom: auto;
+
+    z-index: 1;
+  }
+}

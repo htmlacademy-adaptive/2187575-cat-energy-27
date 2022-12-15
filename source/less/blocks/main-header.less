@@ -25,15 +25,26 @@
 
 .main-header__nav-toggle {
   background-color: transparent;
-  background-image: url("../img/icon/icon-burger.svg");
   width: 24px;
-  height: 18px;
+  height: 20px;
   align-self: center;
   border: none;
 
   &:hover {
     cursor: pointer;
   }
+}
+
+.nav-toogle-open {
+  background-image: url("../img/icon/icon-burger.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.nav-toogle-close {
+  background-image: url("../img/icon/icon-burger-close.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .main-header__desktop-bg {
@@ -81,22 +92,5 @@
 
   .main-header__logo-desktop {
     display: block;
-  }
-
-  .main-header__desktop-bg {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: auto;
-    bottom: auto;
-
-    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/promo/index-background-promo-desktop.jpg") no-repeat center;
-    background-size: cover;
-
-    display: block;
-    min-width: 720px;
-    min-height: 694px;
-
-    z-index: -2;
   }
 }

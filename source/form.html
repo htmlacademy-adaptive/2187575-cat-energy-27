@@ -90,8 +90,8 @@
               </ul>
             </fieldset>
           </div>
-          <fieldset class="form__information-owner information-owner">
-            <div class="information-owner__container">
+          <div class="form__information-owner-container">
+            <fieldset class="form__information-owner information-owner">
               <legend class="information-owner__title">Контактные данные (владельца кота)</legend>
               <ul class="information-owner__list">
                 <li class="information-owner__item form-item">
@@ -103,18 +103,18 @@
                   <input class="form-item__input" type="tel" name="number-phone" id="phone-owner" placeholder="8 (960) 900-60-90" required>
                 </li>
               </ul>
-            </div>
-          </fieldset>
-          <fieldset class="form__comment comment">
-            <div class="comment__container">
+            </fieldset>
+          </div>
+          <div class="form__comment-container">
+            <fieldset class="form__comment comment">
               <legend class="comment__title">Комментарий</legend>
               <div class="comment__wrapper-text">
                 <textarea class="comment__text" name="text" placeholder="Расскажите обо всех повадках кота"></textarea>
               </div>
-              </div>
             </fieldset>
-          <fieldset class="form__additionally additionally">
-            <div class="additionally__container">
+          </div>
+          <div class="form__additionally-container">
+            <fieldset class="form__additionally additionally">
               <legend class="additionally__title">Дополнительно</legend>
               <ul class="additionally__list">
                 <li class="additionally__item">
@@ -142,8 +142,8 @@
                   </label>
                 </li>
               </ul>
-            </div>
-          </fieldset>
+            </fieldset>
+          </div>
           <div class="form__button-wrapper">
               <button class="form__submit-button button button--primary" type="submit">Отправить заявку</button>
               <span class="form__notification">* — Обязательные поля</span>
@@ -158,8 +158,9 @@
             <h2 class="contacts__title">приглашаем<br> к сотрудничеству<br> дилеров!</h2>
             <p class="contacts__description">ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург</p>
           </div>
-          <div class="location__map map">
-            <!-- Тут будет интерактивная карта от гугла с измененным маркером -->
+          <div class="location__map">
+            <iframe class="location__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037902355351!2d30.31882022704915!3d59.938716432394365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1671067485161!5m2!1sru!2sru"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
         <section class="main-footer__under-wrapper">

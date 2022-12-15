@@ -1,15 +1,10 @@
-.information-owner__container {
-  max-width: 1220px;
-  margin: 0 auto;
-}
-
 .information-owner__title {
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
   text-transform: none;
 
-  margin-bottom: 35px;
+  margin-bottom: 10px;
 }
 
 .information-owner__list {
@@ -29,16 +24,16 @@
   .information-owner__title {
     font-size: 36px;
     line-height: 36px;
-    background-color: @white;
+
     display: table;
-
-
     margin-bottom: 76px;
     padding: 0 42px 0 39px;
+
+    background-color: @white;
   }
 
   .information-owner__list {
-    padding-left: 40px;
+    margin-left: 40px;
   }
 
   .information-owner__item {
@@ -49,9 +44,14 @@
 }
 
 @media (min-width: @desktop-width) {
+  .information-owner__title {
+    margin: 0 31px 74px;
+  }
+
   .information-owner__list {
     display: flex;
     justify-content: space-between;
+    margin: 0 71px;
   }
 
   .information-owner__item {
@@ -60,10 +60,5 @@
     &:not(:last-child) {
       margin: 0 78px 0 0;
     }
-  }
-
-  .information-owner__container {
-    max-width: 1220px;
-    padding-right: 39px;
   }
 }
