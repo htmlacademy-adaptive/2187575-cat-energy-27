@@ -9,4 +9,6 @@ navToggle.onclick = function () {
   } else {
   siteList.classList.add('site-list--close');
  }
+ navToggle.classList.toggle('nav-toogle-close');
+ navToggle.classList.toggle('nav-toogle-open');
 };
