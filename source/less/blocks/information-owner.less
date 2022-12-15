@@ -2,6 +2,9 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
+  text-transform: none;
+
+  margin-bottom: 10px;
 }
 
 .information-owner__list {
@@ -14,5 +17,48 @@
 
   &:not(:last-child) {
     margin-bottom: 14px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .information-owner__title {
+    font-size: 36px;
+    line-height: 36px;
+
+    display: table;
+    margin-bottom: 76px;
+    padding: 0 42px 0 39px;
+
+    background-color: @white;
+  }
+
+  .information-owner__list {
+    margin-left: 40px;
+  }
+
+  .information-owner__item {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .information-owner__title {
+    margin: 0 31px 74px;
+  }
+
+  .information-owner__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 71px;
+  }
+
+  .information-owner__item {
+    flex-grow: 1;
+
+    &:not(:last-child) {
+      margin: 0 78px 0 0;
+    }
   }
 }

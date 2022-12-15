@@ -1,0 +1,21 @@
+@media (min-width: @desktop-width) {
+  .page__header-container {
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: auto;
+      bottom: 0;
+
+      background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/promo/index-background-promo-desktop.jpg") no-repeat center;
+      background-size: cover;
+
+      display: block;
+      width: 50%;
+      height: 694px;
+
+      z-index: -2;
+      content: "";
+    }
+  }
+}

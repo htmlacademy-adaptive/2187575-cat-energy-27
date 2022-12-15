@@ -1,6 +1,6 @@
 .program-group {
   padding: 0;
-  margin-bottom: 26px;
+  margin: 0 0 26px;
 }
 
 .program-group__list {
@@ -10,4 +10,15 @@
 
 .program-group__item:not(:last-child) {
   margin-bottom: 13px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .program-group {
+    margin: 0;
+  }
+
+  .program-group__list {
+    padding: 25px 28px;
+  }
 }

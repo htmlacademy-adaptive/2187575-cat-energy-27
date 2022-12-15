@@ -1,9 +1,28 @@
 .promotion {
-  margin: 35px 20px;
-  padding: 59px 61px 43px 59px;
+  position: relative;
 
-  background-color: rgba(104, 183, 56, 0.85);
+  margin: 0 20px 35px;
+  padding: 187px 61px 43px 59px;
+
+  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/promo/background-promotion.jpg") no-repeat center;
+  background-size: cover;
   text-align: center;
+
+  &::before {
+    position: absolute;
+    top: 59px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    width: 78px;
+    height: 80px;
+
+    margin: 0 auto;
+
+    background-image: url("../img/icon/icon-gift.svg");
+    content: " ";
+  }
 }
 
 
@@ -15,4 +34,51 @@
   margin: 0;
   padding: 0;
   box-sizing: content-box;
+  white-space: nowrap;
+}
+
+
+@media (min-width: @tablet-width) {
+  .promotion {
+    margin: 0;
+    padding: 71px 124px 69px;
+    display: flex;
+    justify-content: flex-end;
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/promo/background-promotion-tablet.jpg") no-repeat center;
+    background-size: cover;
+
+
+    &::before {
+      left: 79px;
+
+      margin: 0 auto 0 0;
+    }
+  }
+
+  .promotion__description {
+    text-align: left;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .promotion {
+    width: 245px;
+    display: block;
+    padding: 0;
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/promo/background-promotion.jpg") no-repeat center;
+    background-size: cover;
+    background-position: -32px center;
+
+    &::before {
+      left: 85px;
+
+      margin: 0 auto 0 0;
+    }
+  }
+
+  .promotion__description {
+    text-align: center;
+    padding: 186px 20px 20px;
+  }
 }
