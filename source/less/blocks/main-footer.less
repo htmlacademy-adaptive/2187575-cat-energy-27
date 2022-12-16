@@ -1,6 +1,5 @@
 .main-footer {
   background-color: @basic-grey;
-  text-align: center;
 }
 
 .main-footer__container {
@@ -12,6 +11,14 @@
   padding: 39px 20px 26px;
   text-align: center;
   border-bottom: 1px @border-grey solid;
+
+  &:hover {
+    opacity: 0.75;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .main-footer__social-list {
@@ -50,6 +57,6 @@
 
 @media (min-width: @desktop-width) {
   .main-footer__under-wrapper {
-    padding: 57px 110px 58px;
+    padding: 50px 110px 58px;
   }
 }
