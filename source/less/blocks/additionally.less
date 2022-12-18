@@ -24,7 +24,7 @@
   .additionally__title {
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 57px;
+    margin-bottom: 62px;
     padding: 0 41px 0 39px;
 
     background-color: @white;
@@ -34,9 +34,9 @@
   .additionally__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 32px;
-
-    padding-left: 40px;
+    row-gap: 42px;
+    column-gap: 115px;
+    padding-left: 55px;
   }
 
   .additionally__item:not(:last-child) {
@@ -46,7 +46,8 @@
 
 @media (min-width: @desktop-width) {
   .additionally__list {
-    display: flex;
-    justify-content: space-between;
+    grid-template-columns: 221px 221px 221px 221px;
+    row-gap: 0;
+    column-gap: 103px;
   }
 }

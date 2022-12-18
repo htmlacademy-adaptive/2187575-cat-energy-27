@@ -7,6 +7,10 @@
   color: @special-dark-grey-2;
 
   margin-left: 45px;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .control {
@@ -74,4 +78,29 @@
     font-size: 20px;
     line-height: 30px;
   }
+
+  .control__mark {
+    bottom: -6px;
+    left: -15px;
+
+    width: 38px;
+    height: 38px;
+  }
+
+  .control__input[type="radio"] {
+    &:checked + .control__mark::before {
+      top: 10px;
+      left: 10px;
+
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  .control__input[type="checkbox"] {
+    &:checked + .control__mark {
+      background-size: 25px;
+    }
+  }
 }
+

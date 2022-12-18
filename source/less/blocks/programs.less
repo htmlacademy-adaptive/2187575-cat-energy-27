@@ -118,6 +118,17 @@
     background-size: 100%;
     content: "";
   }
+
+  &:hover {
+    &::after {
+      background-image: url("../img/icon/icon-arrow-hover.svg");
+      width: 32px;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
