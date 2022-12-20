@@ -7,20 +7,21 @@
 
 .slider {
   margin: 0 auto;
-  &__before,
-  &__after {
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-color: @white;
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    overflow: hidden;
-  }
+}
+
+.slider__before,
+.slider__after {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-color: @bg-grey;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  overflow: hidden;
 }
 
 .slider__content-image {
@@ -36,8 +37,8 @@
   left: 119px;
   top: 50%;
 
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   background-color: @white;
 
   display: flex;
@@ -45,7 +46,7 @@
   justify-content: center;
 
   transform: translateY(-50%);
-  border: 2px #666666 solid;
+  border: 2px @slider-dark-grey solid;
   border-radius: 50%;
   opacity: 0.9;
   pointer-events: auto;
@@ -53,14 +54,19 @@
 
   &::before,
   &::after {
-    background-color: #666666;
-    content: " ";
-    display: block;
-    width: 7px;
-    height: 9999px;
     position: absolute;
     left: 50%;
-    margin-left: -3px;
+
+    display: block;
+    width: 4px;
+    height: 110px;
+    margin-left: -2px;
+
+
+    border-radius: 2px;
+    background-color: @slider-dark-grey;
+
+    content: " ";
     z-index: 30;
     transition: 0.1s;
   }
@@ -85,6 +91,19 @@
       background-color: @green;
     }
   }
+
+  &:active path {
+    fill: rgba(94, 170, 47, 0.6);
+  }
+
+  &:active {
+    border-color: rgba(94, 170, 47, 0.6);
+
+    &:after,
+    &:before {
+      background-color: rgba(94, 170, 47, 0.6);
+    }
+  }
 }
 
 .scrolling {
@@ -97,4 +116,37 @@
   width: 100%;
   height: 100%;
   padding: 5px;
+}
+
+@media (min-width: @tablet-width) {
+  .live-example__slider {
+    width: 560px;
+    height: 512px;
+    padding: 0;
+  }
+
+  .slider__before,
+  .slider__after {
+    background: linear-gradient(to bottom, @white 29.8%, @bg-grey 0);
+  }
+
+  .slider__before {
+    width: 280px;
+  }
+
+  .slider__scroller {
+    left: 260px;
+
+    &::before,
+    &::after {
+      height: 237px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .slider__before,
+  .slider__after {
+    background: linear-gradient(to bottom, @white 25.2%, @bg-grey 0);
+  }
 }

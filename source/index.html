@@ -10,14 +10,12 @@
     <div class="page__header-container">
       <header class="main-header">
           <div class="main-header__wrapper">
-            <a class="main-header__logo-mobile">
-              <img src="img/logo/logo-mobile.svg" width="34" height="38" alt="Кэт энерджи.">
-            </a>
-            <a class="main-header__logo-tablet">
-              <img src="img/logo/logo-tablet.svg" width="174" height="52" alt="Кэт энерджи.">
-            </a>
-            <a class="main-header__logo-desktop" href="#">
-              <img src="img/logo/logo-desktop.svg" width="202" height="59" alt="Кэт энерджи.">
+            <a class="main-header__logo-link">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg" width="202" height="59">
+                <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg" width="174" height="52">
+                <img class="main-header__logo-image" src="img/logo/logo-mobile.svg" width="34" height="38" alt="Кэт энерджи.">
+              </picture>
             </a>
             <a class="main-header__logo-text">
               <img src="img/logo/logo-cat-energy.svg" width="101" height="18" alt="">
@@ -50,8 +48,12 @@
         <div class="promo__wrapper">
           <h2 class="promo__headline">Функциональное<br> питание для котов</h2>
           <p class="promo__description">Занялся собой? Займись котом!</p>
-          <img class="promo__product-image" src="img/promo/promo-product.png" alt="Продукт Cat Energy PRO.">
-        </div>
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/promo/promo-product-desktop.png 1x, img/promo/promo-product-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/promo/promo-product-tablet.png 1x, img/promo/promo-product-tablet@2x.png 2x">
+            <img class="promo__product-image" src="img/promo/promo-product-mobile.png" srcset="img/promo/promo-product-mobile@2x.png 2x" width="280" height="270" alt="Продукт Cat Energy PRO.">
+          </picture>
+          </div>
         <div class="promo__button-wrapper">
           <a class="promo__link button button--primary" href="form.html">Подобрать программу</a>
         </div>
@@ -108,10 +110,16 @@
           </div>
           <div class="live-example__slider slider">
             <div class="slider__after">
-              <img class="slider__content-image" src="img/slider/slider-after.png" alt="Пример: Кот Борис после диеты.">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/slider/slider-after-big@1x.png 1x, img/slider/slider-after-big@2x.png 2x">
+                <img class="slider__content-image" src="img/slider/slider-after-small@1x.png" srcset="img/slider/slider-after-small@2x.png 2x" alt="Пример: Кот Борис после диеты.">
+              </picture>
             </div>
             <div class="slider__before">
-              <img class="slider__content-image" src="img/slider/slider-before.png" alt="Пример: Кот Борис до диеты.">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/slider/slider-before-big@1x.png 1x, img/slider/slider-before-big@2x.png 2x">
+                <img class="slider__content-image" src="img/slider/slider-before-small@1x.png" srcset="img/slider/slider-before-small@2x.png 2x" alt="Пример: Кот Борис до диеты.">
+              </picture>
             </div>
             <div class="slider__scroller">
               <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
