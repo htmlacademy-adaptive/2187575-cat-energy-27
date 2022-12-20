@@ -2,19 +2,19 @@
   border: none;
   width: 100%;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 24px;
 
   margin-bottom: 21px;
 }
 
 .form__information-wrapper {
-  max-width: 1220px;
-  margin: 0 auto;
+  margin-bottom: 26px;
 }
 
 .form__information-cat,
 .form__program-group {
   padding: 0;
+  margin: 0;
   border: none;
   border-bottom: 1px @bg-grey solid;
 }
@@ -38,7 +38,7 @@
 .form__information-owner {
   max-width: 1262px;
   margin: 0 auto;
-  padding: 26px 20px 23px;
+  padding: 26px 20px 24px;
 
   border: none;
 }
@@ -61,7 +61,7 @@
 
 .form__comment {
   max-width: 1262px;
-  padding: 0 20px 12px;
+  padding: 0 20px 16px;
   margin: 0 auto;
 
   border: none;
@@ -92,7 +92,7 @@
 }
 
 .form__button-wrapper {
-  padding: 0 20px 32px;
+  padding: 0 20px 35px;
 }
 
 .form__notification {
@@ -107,7 +107,8 @@
 
 @media (min-width: @tablet-width) {
   .form__information-wrapper {
-    padding: 0 67px 71px 71px;
+    padding: 0 67px 74px 71px;
+    margin: 0;
   }
 
   .form__information-owner-container {
@@ -120,7 +121,7 @@
   }
 
   .form__information-owner {
-    padding: 0 66px 65px 30px;
+    padding: 0 66px 67px 30px;
   }
 
   .form__program-group {
@@ -136,7 +137,7 @@
   }
 
   .form__comment {
-    padding: 0 67px 65px 30px;
+    padding: 0 67px 60px 30px;
   }
 
   .form__additionally-container {
@@ -148,7 +149,7 @@
   }
 
   .form__additionally {
-    padding: 0 110px 54px 70px;
+    padding: 0 110px 59px 30px;
   }
 
   .form__button-wrapper {
@@ -159,15 +160,23 @@
   }
 
   .form__submit-button {
-    width: 282px;
     font-size: 20px;
-    line-height: 39px;
+    line-height: 36px;
+
+    width: 282px;
     margin: 0 64px 0 0;
+  }
+
+  .form__notification {
+    font-size: 16px;
+    margin-bottom: 6px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .form__information-wrapper {
+    max-width: 1220px;
+    margin: 0 auto;
     padding: 0 110px 69px 111px;
 
     display: flex;
@@ -184,7 +193,11 @@
   }
 
   .form__comment {
-    padding: 0 110px 81px 70px;
+    padding: 0 110px 62px 70px;
+  }
+
+  .form__additionally {
+    padding: 0 110px 66px 70px;
   }
 
   .form__button-wrapper {

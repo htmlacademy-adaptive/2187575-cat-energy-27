@@ -4,14 +4,16 @@
   line-height: 26px;
   text-transform: none;
 
-  margin-bottom: 37px;
+  padding: 0;
+  margin-bottom: 39px;
 }
 
 .comment__text {
   border-color: @special-white;
   resize: none;
-  width: 100%;
-  height: 150px;
+  width: 89%;
+  height: 130px;
+  padding: 9px 15px;
 
   &::placeholder {
     .font-regular;
@@ -39,6 +41,11 @@
   }
 
   .comment__text {
+    width: 95%;
+    height: 154px;
+
+    padding: 9px 15px 9px 18px;
+
     &::placeholder {
       font-size: 20px;
       line-height: 30px;
@@ -50,6 +57,10 @@
   .comment__title {
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 76px;
+    margin-bottom: 77px;
+  }
+
+  .comment__text {
+    width: 1188px;
   }
 }

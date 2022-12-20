@@ -15,7 +15,10 @@
   line-height: 16px;
   text-transform: uppercase;
 
-  padding: 9px 18px 8px 18px;
+  padding: 9px 10px 8px 13px;
+
+  border-style: solid;
+  border-color: @special-white;
 
   &::placeholder {
     color: @special-dark-grey;
@@ -23,7 +26,20 @@
 
   &::-webkit-outer-spin-button,
   &::-webkit-inner-spin-button {
-    -webkit-appearance: none;
+    -webkit-appearance: none; /* stylelint-disable-line */ /* отключает боковые стрелки в инпут number */
+  }
+
+  &:hover {
+    border-color: @border-list-grey;
+  }
+
+  &:focus-visible {
+    outline: none;
+    border-color: @special-dark-grey;
+  }
+
+  &:invalid:focus:not(:placeholder-shown) {
+    border-color: @error;
   }
 }
 
@@ -31,10 +47,13 @@
   .form-item__input-label {
     font-size: 20px;
     line-height: 30px;
+    margin-right: 12px;
   }
 
   .form-item__input {
     font-size: 20px;
     line-height: 30px;
+
+    padding: 9px 10px 8px 19px;
   }
 }

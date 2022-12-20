@@ -18,31 +18,61 @@
   margin-bottom: 20px;
 }
 
+.live-example__wrapper {
+  display: grid;
+}
+
 .live-example__list {
-  margin: 0 20px;
+  position: relative;
+  margin: 0;
+
+  &:nth-child(2) {
+    margin-left: auto;
+  }
 }
 
 .live-example__objection {
+  position: absolute;
+  top: 48px;
+  right: auto;
+  left: 18px;
+
   .lato;
   font-size: 12px;
   line-height: 12px;
   color: @special-dark-grey;
+  text-align: center;
+
+  padding: 0 15px;
+
+  background-color: @bg-grey;
 }
 
 .live-example__result {
   font-size: 24px;
-  line-height: 24px;
+  line-height: 53px;
+  text-align: center;
+
+  width: 123px;
+  margin: 0 0 8px;
+
+  border: 1px @border-list-grey solid;
+  border-radius: 5%;
+
+  order: -1;
 }
 
 .live-example__wrapper-conclusion {
-  margin: 0 20px;
+  margin: 29px auto 20px;
+  grid-column: span 2;
 }
 
 .live-example__outcome {
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
-  text-align: center;
+
+  margin: 0;
 }
 
 .live-example__container {
@@ -56,7 +86,8 @@
 
 @media (min-width: @tablet-width) {
   .live-example {
-    padding: 10px 30px 0;
+    padding: 10px 30px 101px;
+    background: linear-gradient(to bottom, @white 56%, @bg-grey 0);
   }
 
   .live-example__title {
@@ -68,51 +99,114 @@
   .live-example__description {
     font-size: 16px;
     line-height: 24px;
+
+    width: 708px;
     margin: 0 0 54px;
   }
 
+  .live-example__wrapper {
+    grid-template-columns: 183px 183px 1fr;
+    margin-bottom: 97px;
+  }
+
+  .live-example__line-break-mobile {
+    display: none;
+  }
+
   .live-example__objection {
+    top: 63px;
+    left: 9px;
+
     font-size: 14px;
     line-height: 14px;
+
+    width: 142px;
+    padding: 0;
+
+    background-color: @white;
   }
 
   .live-example__result {
     font-size: 30px;
-    line-height: 37px;
+    line-height: 68px;
+    width: 160px;
   }
 
   .live-example__wrapper-conclusion {
-    margin: 0;
+    margin: 12px 0 0 auto;
+    grid-column: auto;
   }
 
   .live-example__outcome {
     font-size: 20px;
     line-height: 20px;
   }
+
+  .live-example__price {
+    text-align: right;
+    display: block;
+    margin-top: 9px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .live-example {
     padding: 0 0 75px;
+    background: linear-gradient(@white 22%, @bg-grey 0);
   }
 
+  /* stylelint-disable */
+  .live-example__container {
+
+    display: grid;
+    grid-template-columns: 660px 1fr;
+    grid-template-areas:
+    "title slider"
+    "description slider"
+    "example slider";
+  }
+  /* stylelint-enable */ /* Ругается на грид раскладку */
+
   .live-example__title {
-    padding: 0 110px 76px;
-    margin: 0;
+    padding: 0 110px;
+    margin: 0 0 146px 0;
+    grid-area: title;
   }
 
   .live-example__description {
-    padding: 70px 110px 0;
+    width: auto;
+    padding: 0 117px 0 110px;
     margin: 0 0 69px;
+    grid-area: description;
+  }
+
+  .live-example__wrapper {
+    padding-left: 110px;
+    margin: 0;
+    grid-area: example;
   }
 
   .live-example__list {
-    padding: 0 110px;
-    margin: 0 0 47px;
+    margin: 0 0 54px;
+  }
+
+  .live-example__objection {
+    background-color: @bg-grey;
   }
 
   .live-example__wrapper-conclusion {
-    padding: 0 110px;
+    margin: 0;
+    grid-column: span 2;
+  }
+
+  .live-example__price {
+    text-align: start;
+    display: inline;
+    margin: 0 0 0 62px;
+  }
+
+  .live-example__slider {
+    grid-area: slider;
   }
 }
 

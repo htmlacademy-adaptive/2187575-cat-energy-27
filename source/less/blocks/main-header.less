@@ -4,21 +4,13 @@
   margin: 0 auto;
 }
 
-.main-header__logo-tablet {
-  display: none;
-}
-
-.main-header__logo-desktop {
-  display: none;
-}
-
 .main-header__logo-text {
   align-self: center;
   padding-top: 5px;
 }
 
 .main-header__wrapper {
-  padding: 10px 20px 12px;
+  padding: 11px 20px 12px;
   display: flex;
   justify-content: space-between;
 }
@@ -68,14 +60,6 @@
     padding: 0;
   }
 
-  .main-header__logo-mobile {
-    display: none;
-  }
-
-  .main-header__logo-tablet {
-    display: block;
-  }
-
   .main-header__nav-toggle {
     display: none;
   }
@@ -86,11 +70,13 @@
     padding: 53px 110px 0;
   }
 
-  .main-header__logo-tablet {
-    display: none;
-  }
+  .main-header__logo-link {
+    &:hover {
+      opacity: 0.75;
+    }
 
-  .main-header__logo-desktop {
-    display: block;
+    &:active {
+      opacity: 0.6;
+    }
   }
 }
