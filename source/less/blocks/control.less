@@ -34,6 +34,10 @@
   border: 1px @checkbox-hover solid;
 }
 
+.control__input:focus-visible:not(:disabled) + .control__mark {
+  border-color: @special-dark-grey;
+}
+
 .control__input:disabled + .control__mark,
 .control__input:disabled + .control__mark + .control__checkbox-label,
 .control__input:disabled + .control__mark + .control__radio-label {
