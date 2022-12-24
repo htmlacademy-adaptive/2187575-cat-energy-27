@@ -20,15 +20,25 @@
 @media (min-width: @desktop-width) {
   .location {
     position: relative;
+    z-index: 1;
   }
 
   .location__address {
-    position: absolute;
-    top: 96px;
-    right: auto;
-    left: 110px;
-    bottom: auto;
+    width: 405px;
+    height: 86px;
+    padding: 56px 80px 55px;
+  }
 
-    z-index: 1;
+  .location-wrapper {
+    margin: 0 auto;
+    padding: 96px 0;
+    max-width: 1220px;
+  }
+
+  .location__map {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: -1;
   }
 }

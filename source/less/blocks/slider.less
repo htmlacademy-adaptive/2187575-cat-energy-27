@@ -93,15 +93,15 @@
   }
 
   &:active path {
-    fill: rgba(94, 170, 47, 0.6);
+    fill: @acitve-green;
   }
 
   &:active {
-    border-color: rgba(94, 170, 47, 0.6);
+    border-color: @acitve-green;
 
     &:after,
     &:before {
-      background-color: rgba(94, 170, 47, 0.6);
+      background-color: @acitve-green;
     }
   }
 }
@@ -147,6 +147,6 @@
 @media (min-width: @desktop-width) {
   .slider__before,
   .slider__after {
-    background: linear-gradient(to bottom, @white 131px, @bg-grey 0);
+    background: linear-gradient(to bottom, @white 136px, @bg-grey 0);
   }
 }
