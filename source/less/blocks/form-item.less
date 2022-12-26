@@ -15,10 +15,9 @@
   line-height: 16px;
   text-transform: uppercase;
 
-  padding: 9px 10px 8px 13px;
+  padding: 11px 10px 8px 21px;
 
-  border-style: solid;
-  border-color: @special-white;
+  border: 1px @special-white solid;
 
   &::placeholder {
     color: @special-dark-grey;
@@ -43,6 +42,27 @@
   }
 }
 
+.form-item__icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 16px;
+
+  margin: auto 0;
+
+  stroke: @black;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.form-item__input:focus-visible + .form-item__icon {
+  stroke: @green;
+}
+
+.form-item__input:invalid:focus:not(:placeholder-shown) + .form-item__icon {
+  stroke: @error;
+}
+
 @media (min-width: @tablet-width) {
   .form-item__input-label {
     font-size: 20px;
@@ -55,5 +75,9 @@
     line-height: 30px;
 
     padding: 9px 10px 8px 19px;
+  }
+
+  .form-item__icon {
+    right: 20px;
   }
 }

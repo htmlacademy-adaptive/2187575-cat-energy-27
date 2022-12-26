@@ -13,11 +13,17 @@
 }
 
 .information-owner__item {
+  position: relative;
+
   display: flex;
   flex-wrap: nowrap;
 
   &:not(:last-child) {
     margin-bottom: 14px;
+  }
+
+  & .form-item__input {
+    padding: 11px 40px 8px 13px;
   }
 }
 
@@ -44,6 +50,10 @@
 
     & .form-item__input-label {
       margin-right: 20px;
+    }
+
+    & .form-item__input {
+      padding: 11px 40px 8px 20px;
     }
   }
 }
