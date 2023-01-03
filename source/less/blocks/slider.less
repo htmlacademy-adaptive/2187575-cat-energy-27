@@ -34,11 +34,11 @@
 
 .slider__scroller {
   position: absolute;
-  left: 119px;
+  left: 121px;
   top: 50%;
 
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   background-color: @white;
 
   display: flex;
@@ -79,7 +79,7 @@
     bottom: 100%;
   }
 
-  &:hover path {
+  &:hover .slider__scroller-icon {
     fill: @green;
   }
 
@@ -92,7 +92,7 @@
     }
   }
 
-  &:active path {
+  &:active .slider__scroller-icon {
     fill: @acitve-green;
   }
 
@@ -104,6 +104,10 @@
       background-color: @acitve-green;
     }
   }
+}
+
+.slider__scroller-icon {
+  fill: @slider-dark-grey;
 }
 
 .scrolling {
@@ -147,6 +151,6 @@
 @media (min-width: @desktop-width) {
   .slider__before,
   .slider__after {
-    background: linear-gradient(to bottom, @white 136px, @bg-grey 0);
+    background: linear-gradient(to bottom, @white 136px, @basic-grey 0);
   }
 }

@@ -5,6 +5,8 @@
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="../favicon.ico">
+    <link rel="icon" href="./img/favicon/favicon-vector.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./img/favicon/favicon-152.png"> <!-- 152×152 -->
     <link rel="manifest" href="../manifest.webmanifest">
     <meta name="viewport" content="width=device-width,initial-scale=1" />
   </head>
@@ -124,8 +126,8 @@
               </picture>
             </div>
             <button class="slider__scroller" type="button" name="Управление слайдами.">
-              <svg aria-hidden="true" focusable="false" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8 0 0 9l8 9V0Zm16 9-8-9v18l8-9Z" fill="#666"/>
+              <svg class="slider__scroller-icon" aria-hidden="true" focusable="false" width="24" height="18">
+                <use xlink:href="/img/sprite.svg#scroller-icon"></use>
               </svg>
             </button>
           </div>
@@ -189,6 +191,6 @@
         </section>
       </div>
     </footer>
-    <script src="../source/js/menu.js"></script>
+    <script src="js/menu.js"></script>
   </body>
 </html>
