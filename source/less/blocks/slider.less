@@ -86,8 +86,11 @@
   &:hover {
     border-color: @green;
 
-    &:after,
-    &:before {
+    &:after { /* stylelint-disable-line */ /* Не пропускает состояния псевдоэлементов */
+      background-color: @green;
+    }
+
+    &:before { /* stylelint-disable-line */ /* Не пропускает состояния псевдоэлементов */
       background-color: @green;
     }
   }
@@ -99,8 +102,11 @@
   &:active {
     border-color: @acitve-green;
 
-    &:after,
-    &:before {
+    &:after { /* stylelint-disable-line */ /* Не пропускает состояния псевдоэлементов */
+      background-color: @green;
+    }
+
+    &:before { /* stylelint-disable-line */ /* Не пропускает состояния псевдоэлементов */
       background-color: @acitve-green;
     }
   }
@@ -108,18 +114,6 @@
 
 .slider__scroller-icon {
   fill: @slider-dark-grey;
-}
-
-.scrolling {
-  pointer-events: none;
-  opacity: 1;
-  z-index: 1;
-}
-
-.scroller__thumb {
-  width: 100%;
-  height: 100%;
-  padding: 5px;
 }
 
 @media (min-width: @tablet-width) {
