@@ -8,6 +8,7 @@ import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
+import cheerio from 'gulp-cheerio';
 import {deleteAsync} from 'del';
 import csso from 'postcss-csso';
 import autoprefixer from 'autoprefixer';
@@ -77,11 +78,18 @@ const svg = () => {
   .pipe(gulp.dest('build/img'))
 }
 
-const sprite = () => {
+export const sprite = () => {
   return gulp.src('source/img/sprite/*.svg')
   .pipe(svgo())
   .pipe(svgstore({
     inLineSvg: true
+  }))
+  .pipe(cheerio({
+    run: function ($) {
+      $('[fill]').removeAttr('fill');
+      $('[stroke]').removeAttr('stroke');
+    },
+    parserOptions: {xmlMode: true}
   }))
   .pipe(rename('sprite.svg'))
   .pipe(gulp.dest('build/img'))
@@ -90,8 +98,8 @@ const sprite = () => {
 const copy = (done) => {
   gulp.src([
     'source/fonts/**/*.{woff2,woff}',
-    // '*.ico',
-    // '*.webmanifest'
+    'source/*.ico',
+    'source/*.webmanifest'
   ], {
     base: 'source'
   })
