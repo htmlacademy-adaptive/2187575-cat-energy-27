@@ -35,64 +35,65 @@ export const styles = () => {
 
 const html = () => {
   return gulp.src('source/*.html')
-  .pipe(htmlmin({collapseWhitespace: true}))
-  .pipe(gulp.dest('build'));
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest('build'));
 }
 
 // Scripts
 
 const scripts = () => {
   return gulp.src('source/js/*.js')
-  .pipe(terser())
-  .pipe(gulp.dest('build/js'));
+    .pipe(terser())
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('build/js'));
 }
 
 // Images
 
 const optimizeImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
-  .pipe(squoosh())
-  .pipe(gulp.dest('build/img'))
+    .pipe(squoosh())
+    .pipe(gulp.dest('build/img'))
 }
 
 const copyImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
-  .pipe(gulp.dest('build/img'))
+    .pipe(gulp.dest('build/img'))
 }
 
 // WebP
 
 const createWebp = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
-  .pipe(squoosh({
-    webp: {}
-  }))
-  .pipe(gulp.dest('build/img'))
+    .pipe(squoosh({
+      webp: {}
+    }))
+    .pipe(gulp.dest('build/img'))
 }
 
 // SVG
 
 const svg = () => {
   return gulp.src(['source/img/**/*.svg', '!source/img/sprite/*.svg'])
-  .pipe(svgo())
-  .pipe(gulp.dest('build/img'))
+    .pipe(svgo())
+    .pipe(gulp.dest('build/img'))
 }
 
-export const sprite = () => {
+const sprite = () => {
   return gulp.src('source/img/sprite/*.svg')
-  .pipe(svgo())
-  .pipe(svgstore({
-    inLineSvg: true
-  }))
-  .pipe(cheerio({
-    run: function ($) {
-      $('[fill]').removeAttr('fill');
-      $('[stroke]').removeAttr('stroke');
-    },
-    parserOptions: {xmlMode: true}
-  }))
-  .pipe(rename('sprite.svg'))
-  .pipe(gulp.dest('build/img'))
+    .pipe(svgo())
+    .pipe(svgstore({
+      inLineSvg: true
+    }))
+    .pipe(cheerio({
+      run: function ($) {
+        $('[fill]').removeAttr('fill');
+        $('[stroke]').removeAttr('stroke');
+      },
+      parserOptions: {xmlMode: true}
+    }))
+    .pipe(rename('sprite.svg'))
+    .pipe(gulp.dest('build/img'))
 }
 
 const copy = (done) => {
@@ -142,7 +143,7 @@ const watcher = () => {
 
 // Build
 
-const build = gulp.series(
+export const build = gulp.series(
   clean,
   copy,
   optimizeImages,
