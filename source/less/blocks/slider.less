@@ -2,7 +2,6 @@
   width: 240px;
   height: 256px;
   transform: translate3d(0, 0, 0);
-  overflow: hidden;
 }
 
 .slider {
@@ -11,8 +10,6 @@
 
 .slider__before,
 .slider__after {
-  width: 100%;
-  height: 100%;
   background-repeat: no-repeat;
   background-color: @bg-grey;
   background-size: cover;
@@ -48,26 +45,18 @@
   transform: translateY(-50%);
   border: 2px @slider-dark-grey solid;
   border-radius: 50%;
-  pointer-events: auto;
   cursor: pointer;
 
   &::before,
   &::after {
     position: absolute;
-    left: 50%;
 
-    display: block;
     width: 4px;
     height: 110px;
-    margin-left: -2px;
-
 
     border-radius: 2px;
     background-color: @slider-dark-grey;
-
     content: " ";
-    z-index: 30;
-    transition: 0.1s;
   }
 
   &::before {
@@ -102,7 +91,7 @@
     border-color: @acitve-green;
 
     &:after { /* stylelint-disable-line */ /* Не пропускает состояния псевдоэлементов */
-      background-color: @green;
+      background-color: @acitve-green;
     }
 
     &:before { /* stylelint-disable-line */ /* Не пропускает состояния псевдоэлементов */
