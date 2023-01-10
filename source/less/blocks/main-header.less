@@ -17,14 +17,20 @@
 }
 
 .main-header__nav-toggle {
-  background-color: transparent;
   width: 24px;
   height: 20px;
   align-self: center;
+
+  visibility: hidden;
+  background-color: transparent;
   border: none;
 
   &:hover {
     cursor: pointer;
+  }
+
+  &--active {
+    visibility: visible;
   }
 }
 

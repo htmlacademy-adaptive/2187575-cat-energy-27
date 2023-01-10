@@ -2,6 +2,8 @@ let navToggle = document.querySelector('.main-header__nav-toggle');
 let siteList = document.querySelector('.site-list');
 
 siteList.classList.add('site-list--close');
+siteList.classList.add('site-list--active');
+navToggle.classList.add('main-header__nav-toggle--active');
 
 navToggle.onclick = function () {
   if (siteList.classList.contains('site-list--close')){
