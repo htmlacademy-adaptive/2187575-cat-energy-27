@@ -1,25 +1,27 @@
 @media (min-width: @desktop-width) {
   .page__header-container {
-    &::before {
-      position: absolute;
-      top: 0;
-      right: 0;
-      left: auto;
-      bottom: 0;
+    &--index {
+      &::before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: auto;
+        bottom: 0;
 
-      background: linear-gradient(rgba(@bg-green, 0.85), rgba(@bg-green, 0.85)), url("../img/promo/index-background-promo-desktop.jpg") no-repeat center;
-      background-size: cover;
-
-      display: block;
-      width: 50%;
-      height: 694px;
-
-      z-index: -2;
-      content: "";
-
-      @media (min-resolution: 2dppx) {
-        background: linear-gradient(rgba(@bg-green, 0.85), rgba(@bg-green, 0.85)), url("../img/promo/index-background-promo-desktop@2x.jpg") no-repeat center;
+        background: linear-gradient(rgba(@bg-green, 0.85), rgba(@bg-green, 0.85)), url("../img/promo/index-background-promo-desktop.jpg") no-repeat center;
         background-size: cover;
+
+        display: block;
+        width: 50%;
+        height: 694px;
+
+        z-index: -2;
+        content: "";
+
+        @media (min-resolution: 2dppx) {
+          background: linear-gradient(rgba(@bg-green, 0.85), rgba(@bg-green, 0.85)), url("../img/promo/index-background-promo-desktop@2x.jpg") no-repeat center;
+          background-size: cover;
+        }
       }
     }
   }
