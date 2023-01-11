@@ -12,15 +12,20 @@
 .form-item__input {
   .font-regular;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 18px;
   text-transform: uppercase;
 
-  padding: 11px 10px 8px 21px;
+  padding: 14px 10px 11px 21px;
 
+  flex-grow: 1;
   border: 1px @special-white solid;
 
   &::placeholder {
     color: @special-dark-grey;
+  }
+
+  &--owner {
+    padding: 14px 40px 12px 13px;
   }
 
   &::-webkit-outer-spin-button,
@@ -69,6 +74,10 @@
     font-size: 20px;
     line-height: 30px;
     margin-right: 12px;
+
+    &--owner {
+      margin-right: 20px;
+    }
   }
 
   .form-item__input {
@@ -76,6 +85,10 @@
     line-height: 30px;
 
     padding: 9px 10px 11px 19px;
+
+    &--owner {
+      padding: 11px 40px 8px 20px;
+    }
   }
 
   .form-item__icon {
