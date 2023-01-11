@@ -49,6 +49,7 @@
     }
 
     .product__title {
+      width: auto;
       margin: 0 0 8px;
     }
   }
@@ -75,6 +76,7 @@
   line-height: 20px;
   text-transform: uppercase;
 
+  width: 75px;
   margin: 0 0 14px 0;
 
   grid-area: title;
@@ -132,12 +134,14 @@
 
     background: linear-gradient(to top,  @basic-grey 430px, @white 25%); /* stylelint-disable-line */ /* Не пропускает направление градиента */
 
+    border: none;
+
     &--show-all {
       background: @white;
-      padding: 160px 35px 37px;
+      padding: 158px 35px 37px;
       align-self: end;
 
-      border: 1px @basic-grey solid;
+      border: 2px @basic-grey solid;
 
       .product__title {
         padding: 0 48px;
@@ -145,16 +149,12 @@
       }
 
       &::before {
-        top: 81px;
-        left: 0;
-
+        top: 80px;
         width: 60px;
       }
 
       &::after {
-        top: 80px;
-        left: 2px;
-
+        top: 79px;
         width: 60px;
       }
     }
@@ -164,13 +164,13 @@
     font-size: 16px;
     line-height: 18px;
 
-    margin: 0 0 88px;
+    margin: 0 0 86px;
     padding: 0 15px;
   }
 
   .product__link {
     padding: 0 50px;
-    margin-bottom: 10px;
+    margin-bottom: 11px;
   }
 
   .product__link-image {
@@ -189,11 +189,9 @@
   .product__title {
     font-size: 20px;
     line-height: 24px;
-    margin: 0;
-  }
 
-  .product__break-mobile {
-    display: none;
+    width: auto;
+    margin: 0;
   }
 
   .product__detail-list {
@@ -202,12 +200,16 @@
 
     width: auto;
 
-    margin: 0 0 33px;
+    margin: 0 0 32px;
   }
 
   .product__item {
     border-bottom: 1px @border-list-grey solid;
-    padding: 8px 0;
+    padding: 8px 2px;
+  }
+
+  .product__cell-meaning {
+    margin-inline-start: 0;
   }
 
   .product__main-link {
@@ -217,22 +219,23 @@
 
 @media (min-width: @desktop-width) {
   .product {
-    padding: 0 28px 40px 36px;
+    padding: 0 28px 41px 36px;
 
     &--show-all {
-      padding: 165px 28px 40px 36px;
+      padding: 162px 29px 40px 31px;
       justify-content: end;
 
       .product__title {
         padding: 0 20px;
+        margin: 0 0 24px;
       }
 
       &::before {
-        top: 82px;
+        top: 81px;
       }
 
       &::after {
-        top: 81px;
+        top: 80px;
         left: 3px;
       }
     }
@@ -244,7 +247,7 @@
   }
 
   .product__link-image {
-    margin-bottom: 37px;
+    margin-bottom: 38px;
   }
 
   .product__image-wrapper {
@@ -257,7 +260,7 @@
   }
 
   .product__main-link {
-    margin: 0 9px 0 2px;
+    margin: 0 9px 0 3px;
   }
 
   .product__description {
@@ -267,5 +270,9 @@
   .product__title {
     font-size: 20px;
     line-height: 21px;
+  }
+
+  .product__item {
+    padding: 8px 0;
   }
 }

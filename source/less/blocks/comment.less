@@ -9,19 +9,25 @@
 }
 
 .comment__text {
-  border-color: @special-white;
-  resize: none;
+  .font-regular;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+
   width: 89%;
   height: 130px;
   padding: 9px 15px;
 
+  border-color: @special-white;
+  resize: none;
+
   &::placeholder {
-    .font-regular;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 18px;
     color: @special-dark-grey;
     text-transform: uppercase;
+  }
+
+  &:hover {
+    border-color: @border-list-grey;
   }
 }
 
@@ -41,15 +47,13 @@
   }
 
   .comment__text {
+    font-size: 20px;
+    line-height: 30px;
+
     width: 95%;
     height: 154px;
 
     padding: 9px 15px 9px 18px;
-
-    &::placeholder {
-      font-size: 20px;
-      line-height: 30px;
-    }
   }
 }
 

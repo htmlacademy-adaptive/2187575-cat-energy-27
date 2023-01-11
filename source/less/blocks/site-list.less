@@ -4,11 +4,19 @@
 
   background-color: @white;
   z-index: 1;
-  position: absolute;
+  position: block;
+
+  &--active {
+    position: absolute;
+  }
 }
 
 .site-list--close {
   display: none;
+}
+
+.site-list--open {
+  display: block;
 }
 
 .site-list__item {
@@ -53,6 +61,8 @@
     padding: 0;
 
     &--current {
+      cursor: initial;
+
       &::after {
         position: absolute;
         top: 32px;
@@ -85,12 +95,16 @@
     }
 
     &:not(:last-child) {
-      margin-right: 37px;
+      margin-right: 34px;
     }
   }
 }
 
 @media (min-width: @desktop-width) {
+  .site-list {
+    margin: 0;
+  }
+
   .site-list__link {
     font-size: 20px;
     line-height: 30px;

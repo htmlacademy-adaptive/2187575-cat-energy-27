@@ -1,4 +1,4 @@
-.catalog__container {
+.catalog {
   max-width: 1220px;
   margin: 0 auto;
 }
@@ -8,20 +8,20 @@
 }
 
 .catalog__item {
-  padding: 19px 20px 25px;
+  padding: 20px 20px 24px;
   border-bottom: 1px @border-grey solid;
 }
 
 @media (min-width: @tablet-width) {
   .catalog {
-    padding: 0 30px 43px;
+    padding: 0 30px 45px;
   }
 
   .catalog__list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(324px, 1fr));
     column-gap: 60px;
-    row-gap: 68px;
+    row-gap: 69px;
   }
 
   .catalog__item {
@@ -32,7 +32,7 @@
 
 @media (min-width: @desktop-width) {
   .catalog {
-    padding: 0 111px 53px;
+    padding: 0 111px 51px;
   }
 
   .catalog__item {
@@ -44,6 +44,6 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    row-gap: 63px;
+    row-gap: 65px;
   }
 }
